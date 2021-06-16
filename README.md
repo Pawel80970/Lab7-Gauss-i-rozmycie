@@ -1,0 +1,1 @@
+# Lab7-Gauss-i-rozmycie
