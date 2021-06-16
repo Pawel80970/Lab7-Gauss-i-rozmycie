@@ -16,7 +16,6 @@ public class Gauss {
 
         try {
 
-            //odczyt obrazu z pliku
             File input = new File("Miasto.jpg");
 
             image = ImageIO.read(input);
@@ -36,8 +35,7 @@ public class Gauss {
 
                     for (int k = -1; k <= 1; k++) {
                         for (int l = -1; l <= 1; l++) {
-
-                            //odczyt składowych koloru RGB
+                        
                             Color c = new Color(image.getRGB(j + k, i + l));
 
                             red = (c.getRed());
@@ -73,7 +71,6 @@ public class Gauss {
                 } 
             }
 
-            //zapis do pliku zmodyfikowanego obrazu
             File ouptut = new File("Miasto_Gauss.jpg");
             ImageIO.write(image, "jpg", ouptut);
 
